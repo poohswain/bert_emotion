@@ -1,0 +1,10 @@
+# PyTorch 請依照自己的 CUDA 版本，到 https://pytorch.org/get-started/locally/ 複製安裝指令，例如：
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+transformers==5.17.0
+datasets==5.0.1
+evaluate
+accelerate==1.15.0
+scikit-learn
+pandas
+huggingface_hub
+matplotlib

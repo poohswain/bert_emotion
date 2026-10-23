@@ -1,0 +1,8 @@
+# 訓練中途的 checkpoint 不上傳，只上傳 output/ 裡的 Best Model
+checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+train.log
