@@ -135,7 +135,7 @@ GPU 記憶體不足時，把 `PER_DEVICE_TRAIN_BATCH_SIZE` 改成 16，並把 `G
 ## 成果
 
 ### 訓練過程
-![訓練過程](images/train_screenshot.png)
+![訓練過程](images/screenshot2.png)
 
 ### Loss 曲線
 ![Loss](images/loss_curve.png)
@@ -147,7 +147,7 @@ GPU 記憶體不足時，把 `PER_DEVICE_TRAIN_BATCH_SIZE` 改成 16，並把 `G
 ![Confusion Matrix](images/confusion_matrix.png)
 
 ### 推論結果
-![推論結果](images/infer_screenshot.png)
+![推論結果](images/screenshot1.png)
 
 ## 上傳模型到 GitHub（Git LFS）
 
