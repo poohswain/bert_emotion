@@ -2,7 +2,7 @@
 
 ## 訓練資料來源
 - [Datasets: Johnson8187/Chinese_Multi-Emotion_Dialogue_Dataset](https://huggingface.co/datasets/Johnson8187/Chinese_Multi-Emotion_Dialogue_Dataset)
-- 約 4,159 筆中文對話句子，欄位為 `text`（句子）與 `emotion`（情緒語調）
+- 共 4,159 筆中文對話句子，欄位為 `text`（句子）與 `emotion`（情緒語調）；移除 5 筆重複句子後，實際使用 4,154 筆
 
 ## 基礎模型
 - [google-bert/bert-base-chinese](https://huggingface.co/google-bert/bert-base-chinese)
@@ -83,6 +83,7 @@ Best Model 為 validation macro F1 最高的 epoch 3.85（valid macro F1 0.8882�
 - 厭惡語調 → 憤怒語調（6 / 40 句），兩者都屬負面且語氣強烈
 - 疑問語調 → 平淡語氣（5 / 39 句），沒有問號的疑問句容易被當成一般陳述
 - 關切語調 → 悲傷語調（5 / 56 句），關心別人時常伴隨難過的情境
+
 各類別的 precision / recall / F1 請見 [`results/classification_report.txt`](results/classification_report.txt)。
 
 ## 專案結構
@@ -96,6 +97,7 @@ Best Model 為 validation macro F1 最高的 epoch 3.85（valid macro F1 0.8882�
 ├── show_versions.py       # 列出套件版本，貼到 README 用
 ├── requirements.txt
 ├── fonts/                 # 繪圖用的中文字型（Noto Sans TC）
+├── data/raw/data.csv      # 原始資料集（從 Hugging Face 下載）
 ├── data/bert/             # prepare_data.py 產生的資料與 label_map.json
 ├── output/bert_emotion_clf/   # 微調後的 Best Model（不含 checkpoint-*）
 ├── results/               # 測試集評估與預測結果
